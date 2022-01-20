@@ -107,13 +107,9 @@
         <article class="results__exercise" id="res-exercise-01">
             <h2>Ejercicio 01</h2>
             <pre>
-                .footer{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background: grey;
-                    height: 80px;
-                }  
+                for(let i = 1; i <= 30; i += 3){
+                    console.log(i);
+                }
             </pre>
         </article>
         <a class="top__button" href="#exercise-01"><p>Subir</p></a>
@@ -121,13 +117,11 @@
         <article class="results__exercise " id="res-exercise-02">
             <h2>Ejercicio 02</h2>
             <pre>
-                .footer{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background: grey;
-                    height: 80px;
-                }  
+                console.log(`Tabla de Multiplicar del 8`);
+
+                for(let i = 1; i <= 10; i++){
+                    console.log(`8 x ${i} = ${i * 8}`);
+                }
             </pre>
         </article>
         <a class="top__button" href="#exercise-02"><p>Subir</p></a>
@@ -135,13 +129,13 @@
         <article class="results__exercise" id="res-exercise-03">
             <h2>Ejercicio 03</h2>
             <pre>
-                .footer{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background: grey;
-                    height: 80px;
-                }  
+                for(let i = 1; i <= 29; i++){
+                    if(i % 2 === 0){
+                        console.log(`El número ${i}, es par`)
+                    } else {
+                        console.log(`El número ${i}, es impar`)
+                    }
+                }
             </pre>
         </article>
         <a class="top__button" href="#exercise-03"><p>Subir</p></a>
@@ -149,13 +143,17 @@
         <article class="results__exercise" id="res-exercise-04">
             <h2>Ejercicio 04</h2>
             <pre>
-                .footer{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background: grey;
-                    height: 80px;
-                }  
+                let frase = prompt(`Escribe una frase`);
+
+                let contador = 0;
+                
+                for (letra of frase) {
+                    if(letra === 'a'){
+                        contador++
+                    }
+                }
+                
+                console.log(`La frase: ${frase}, tiene ${contador} letras "a"`);
             </pre>
         </article>
         <a class="top__button" href="#exercise-04"><p>Subir</p></a>
@@ -255,5 +253,7 @@
     <footer class="footer">
         <p>© 2022 - Creado por: Mauricio Murcia S.</p>
     </footer>
+
+    <script src="./main.js"></script>
 </body>
 </html>

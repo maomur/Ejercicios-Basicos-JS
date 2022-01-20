@@ -100,6 +100,53 @@
              <p class="exercise__button">Ir al Resultado</p>
          </a>
     </article>
+
+    <article id="exercise-11" class="exercise">
+        <h2 class="exercise__title">Ejercicio 11</h2>
+        <p class="exercise__text">Con el <strong>for of</strong>, crea un array con cinco nombres de persona y recórrelo mostrando el texto "Conozco al alguien llamado..."</p>
+
+         <a href="#res-exercise-11">
+             <p class="exercise__button">Ir al Resultado</p>
+         </a>
+    </article>
+
+    <article id="exercise-12" class="exercise">
+        <h2 class="exercise__title">Ejercicio 12</h2>
+        <p class="exercise__text">Recorrer la siguiente lista con un bucle, imprimiendo el doble de cada número:</p>
+        <pre>
+            myList = [1,9,3,8,5,7];
+        </pre>
+         <a href="#res-exercise-12">
+             <p class="exercise__button">Ir al Resultado</p>
+         </a>
+    </article>
+
+    <article id="exercise-13" class="exercise">
+        <h2 class="exercise__title">Ejercicio 13</h2>
+        <p class="exercise__text">En un array cualquiera con 10 números, contar cuantos números positivos hay, cuantos negativos y cuantos ceros.</p>
+
+         <a href="#res-exercise-13">
+             <p class="exercise__button">Ir al Resultado</p>
+         </a>
+    </article>
+
+    <article id="exercise-14" class="exercise">
+        <h2 class="exercise__title">Ejercicio 14</h2>
+        <p class="exercise__text">Hay que crear un programa de JS que permita adivinar un número secreto entre 1 y 100.</p>
+        <ol>
+            <li>Se considera que cuando el usuario introduce un valor, éste es siempre válido.</li>
+            <li>Con cada intento del jugador, el programa le dice si el número secreto es mayor o menor.</li>
+            <li>El jugador tiene 6 intentos para adivinar el número.</li>
+            <li>Para crear un número aleatorio real utilizamos este código:
+                <ul><li>Math.floor((Math.random() * 100) + 1);</li></ul>
+            </li>
+        </ol>
+         <a href="#res-exercise-14">
+             <p class="exercise__button">Ir al Resultado</p>
+         </a>
+    </article>
+
+
     </section>
     
     <h2 class="final-results">RESULTADOS</h2>
@@ -162,13 +209,20 @@
         <article class="results__exercise" id="res-exercise-05">
             <h2>Ejercicio 05</h2>
             <pre>
-                .footer{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background: grey;
-                    height: 80px;
-                }  
+                for(let i = 1; i <= 50; i++){
+
+                    if(i % 3 === 0 && i % 5 === 0){
+                        console.log(`FizzBuzz`);
+                    } else if(i % 3 === 0){
+                        console.log(`Fizz`);
+                    } else if(i % 5 === 0){
+                        console.log(`Buzz`);
+                    } else {
+                        console.log(i)
+                    }
+                
+                    console.log(i);
+                }
             </pre>
         </article>
         <a class="top__button" href="#exercise-5"><p>Subir</p></a>
@@ -177,13 +231,12 @@
         <article class="results__exercise" id="res-exercise-06">
             <h2>Ejercicio 06</h2>
             <pre>
-                .footer{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background: grey;
-                    height: 80px;
-                }  
+                for(let i = 1; i <= 10; i++) {
+                    console.log(`Tabla del ${i}`)
+                    for(let j = 1; j <= 10; j++){
+                        console.log(`${i} x ${j} = ${i*j}`);
+                    }
+                }
             </pre>
         </article>
         <a class="top__button" href="#exercise-06"><p>Subir</p></a>
@@ -192,13 +245,13 @@
         <article class="results__exercise" id="res-exercise-07">
             <h2>Ejercicio 07</h2>
             <pre>
-                .footer{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background: grey;
-                    height: 80px;
-                }  
+                let numero;
+
+                do{
+                    numero = prompt(`Ingresa un número del 1 al 10`);
+                } while(numero < 1 || numero > 10 || isNaN(numero));
+                
+                console.log(`El número ingresado: ${numero}, es correcto!`); 
             </pre>
         </article>
         <a class="top__button" href="#exercise-07"><p>Subir</p></a>
@@ -207,13 +260,13 @@
         <article class="results__exercise" id="res-exercise-08">
             <h2>Ejercicio 08</h2>
             <pre>
-                .footer{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background: grey;
-                    height: 80px;
-                }  
+                let elNumero;
+
+                do{
+                    elNumero = prompt(`Introduce un número entero entre 2 y 10`);
+                } while(elNumero < 2 || elNumero > 10 || isNaN(elNumero));
+                
+                console.log(`El número ${elNumero}, es correcto!`);
             </pre>
         </article>
         <a class="top__button" href="#exercise-08"><p>Subir</p></a>
@@ -247,6 +300,66 @@
             </pre>
         </article>
         <a class="top__button" href="#exercise-10"><p>Subir</p></a>
+
+        <article class="results__exercise" id="res-exercise-11">
+            <h2>Ejercicio 11</h2>
+            <pre>
+                .footer{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: grey;
+                    height: 80px;
+                }  
+            </pre>
+        </article>
+        <a class="top__button" href="#exercise-11"><p>Subir</p></a>
+
+
+        <article class="results__exercise" id="res-exercise-12">
+            <h2>Ejercicio 12</h2>
+            <pre>
+                .footer{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: grey;
+                    height: 80px;
+                }  
+            </pre>
+        </article>
+        <a class="top__button" href="#exercise-12"><p>Subir</p></a>
+
+
+        <article class="results__exercise" id="res-exercise-13">
+            <h2>Ejercicio 13</h2>
+            <pre>
+                .footer{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: grey;
+                    height: 80px;
+                }  
+            </pre>
+        </article>
+        <a class="top__button" href="#exercise-13"><p>Subir</p></a>
+
+
+        <article class="results__exercise" id="res-exercise-14">
+            <h2>Ejercicio 14</h2>
+            <pre>
+                .footer{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: grey;
+                    height: 80px;
+                }  
+            </pre>
+        </article>
+        <a class="top__button" href="#exercise-14"><p>Subir</p></a>
+
 
     </section>
 

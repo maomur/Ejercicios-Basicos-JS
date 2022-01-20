@@ -1,0 +1,128 @@
+/* Reset */
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(238, 238, 238);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    font-size: 2.2em;
+    text-align: center;
+    color: chocolate;
+}
+
+h2{
+    font-size: 1.3em;
+}
+
+.sub-title{
+    font-size: 1.6em;
+    text-align: center;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+/* Estilos Generales */
+
+.exercises{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    text-align: justify;
+    gap: 2em;
+    width: 70%;
+    margin: 80px auto;
+
+}
+
+.exercise{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    padding: 3em;
+    transition: all 2ms ease;
+}
+
+.exercise:hover{
+    box-shadow: 2px 2px 20px rgb(138, 138, 138);
+}
+
+.exercise__text{
+    font-size: 0.8em;
+    color: grey;
+}
+
+.exercise li{
+    font-size: 0.8em;
+    color: grey;
+}
+
+.exercise__button{
+   margin: 0 auto;
+   width: 40%;
+   margin-top: 1em;
+   color: rgb(255, 255, 255);
+   font-size: 0.7em;
+   text-align: center;
+   background: grey; 
+   padding: 0.7em;
+   cursor: pointer;
+}
+
+.exercise__button:hover{
+    background: chocolate;
+}
+
+.final-results{
+ margin-top: 2em;
+ text-align: center;  
+ color: chocolate; 
+ font-size: 1.6em;
+}
+
+.results{
+    width: 70%;
+    margin: 0 auto;
+    color: white;
+    padding: 3em;
+    border-radius: 15px;    
+}
+
+
+.results__exercise{
+    margin: 3em;
+    background: rgb(34, 34, 34);
+    padding: 4em;
+}
+
+.top__button{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 8em;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 0.1em 1em;
+    width: 100px;
+    background-color: rgb(187, 187, 187);
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.top__button:hover{
+    background: rgb(167, 167, 167);
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: grey;
+    height: 80px;
+    margin-top: 4em;
+}

@@ -11,9 +11,11 @@
 
 
 ## Web
-Ver Web de Ejercicios [Ver](https://bit.ly/35guzNk)
+Ejercicios: [Ver Web](https://bit.ly/35guzNk)
 
-![Screen Ejercicios](https://raw.githubusercontent.com/maomur/ejercicios-basicos-js/screen.png)
+![Screen Ejercicios](https://raw.githubusercontent.com/maomur/Ejercicios-Basicos-JS/main/screen.png)
+
+
 
 
 

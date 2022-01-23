@@ -225,7 +225,7 @@
                 }
             </pre>
         </article>
-        <a class="top__button" href="#exercise-5"><p>Subir</p></a>
+        <a class="top__button" href="#exercise-05"><p>Subir</p></a>
 
 
         <article class="results__exercise" id="res-exercise-06">
@@ -276,13 +276,21 @@
         <article class="results__exercise" id="res-exercise-09">
             <h2>Ejercicio 09</h2>
             <pre>
-                .footer{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background: grey;
-                    height: 80px;
-                }  
+                let elNumero;
+
+                do{
+                    elNumero = prompt(`Introduce un número entero entre 2 y 10`);
+                } while(elNumero < 2 || elNumero > 10 || isNaN(elNumero));
+                
+                console.log(`El número ${elNumero}, es correcto!`);
+                
+                console.log(`TABLA DE MULTIPLICAR DEL ${elNumero}`)
+                
+                for(let i = 1; i <= 10; i++){
+                
+                        console.log(`${i} x ${elNumero} = ${i*elNumero}`);
+                
+                    }
             </pre>
         </article>
         <a class="top__button" href="#exercise-09"><p>Subir</p></a>
@@ -290,13 +298,17 @@
         <article class="results__exercise" id="res-exercise-10">
             <h2>Ejercicio 10</h2>
             <pre>
-                .footer{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background: grey;
-                    height: 80px;
-                }  
+                let contador = 0;
+                let estrellas = "*";
+                
+                while(contador <= 7) {
+                    console.log(`${estrellas}`);
+                
+                    estrellas += "*";
+                
+                    contador++;
+                
+                }
             </pre>
         </article>
         <a class="top__button" href="#exercise-10"><p>Subir</p></a>
@@ -304,13 +316,12 @@
         <article class="results__exercise" id="res-exercise-11">
             <h2>Ejercicio 11</h2>
             <pre>
-                .footer{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background: grey;
-                    height: 80px;
-                }  
+                let names = ["Mauricio", "Laia", "Bruna", "Grace", "Alejandro"];
+
+                for(let name of names){
+                    console.log(`Conozco a alguien llamado ${name}`);
+                    name++;
+                }
             </pre>
         </article>
         <a class="top__button" href="#exercise-11"><p>Subir</p></a>
@@ -319,13 +330,14 @@
         <article class="results__exercise" id="res-exercise-12">
             <h2>Ejercicio 12</h2>
             <pre>
-                .footer{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background: grey;
-                    height: 80px;
-                }  
+                let myList = [1, 9, 3, 8, 5, 7];
+
+                for(let list of myList){
+                
+                    console.log(list * 2);
+                
+                    list++
+                }
             </pre>
         </article>
         <a class="top__button" href="#exercise-12"><p>Subir</p></a>
@@ -334,13 +346,14 @@
         <article class="results__exercise" id="res-exercise-13">
             <h2>Ejercicio 13</h2>
             <pre>
-                .footer{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background: grey;
-                    height: 80px;
-                }  
+                for(let number of myNumbers){
+                    if(number < 0){
+                        console.log(`El número ${number}, es negativo`)
+                    } else{
+                        console.log(`El número ${number}, es positivo`);
+                
+                    }
+                }
             </pre>
         </article>
         <a class="top__button" href="#exercise-13"><p>Subir</p></a>
@@ -349,13 +362,39 @@
         <article class="results__exercise" id="res-exercise-14">
             <h2>Ejercicio 14</h2>
             <pre>
-                .footer{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background: grey;
-                    height: 80px;
-                }  
+                let userNumber = Number(prompt(`Adivina un número secreto entre 1 y 100.`));
+
+                let systemNumber = Math.floor((Math.random() * 100) + 1);
+                
+                
+                let contador = 6;
+                
+                while(contador >= 1){
+                
+                    if(systemNumber > userNumber && contador > 1){
+                        console.log(`Incorrecto, el número ingresado ${userNumber} es menor`);
+                        contador--;
+                        console.log(`Te quedan ${contador} intentos`);
+                        userNumber = Number(prompt(`Adivina un número secreto entre 1 y 100.`));
+                
+                    } else if(systemNumber < userNumber && contador > 1){
+                        console.log(`Incorrecto, el número ingresado ${userNumber} es mayor`);
+                        contador--;
+                        console.log(`Te quedan ${contador} intentos`);
+                        userNumber = Number(prompt(`Adivina un número secreto entre 1 y 100.`));
+                
+                    } else if (systemNumber === userNumber){
+                        console.log(`Felicitaciones, has adivinado el número secreto!`);
+                        break;
+                    } else {
+                        console.log('Se han acabado tus intentos!!');
+                        break;
+                    }
+                }
+                
+                console.log(`EL NÚMERO SECRETO ERA: ${systemNumber}`);
+                
+                
             </pre>
         </article>
         <a class="top__button" href="#exercise-14"><p>Subir</p></a>

@@ -1,1 +1,20 @@
 # Ejercicios Basicos JS
+
+### Requerimientos Educativos:
+
+- HTML básico
+- Condicionales
+- Switch
+- Arrays
+- Bucles
+- Funciones
+
+
+## Web
+Ver Web de Ejercicios [Ver](https://bit.ly/35guzNk)
+
+![Screen Ejercicios](https://raw.githubusercontent.com/maomur/ejercicios-basicos-js/screen.png)
+
+
+
+

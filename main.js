@@ -205,6 +205,7 @@ EJERCICIO 09
 2. Comprobar y repetir pregunta si no es correcto.
 3. Crear un bucle for para la tabla de multiplicar de dicho número.
 
+
 let elNumero;
 
 do{
@@ -213,8 +214,17 @@ do{
 
 console.log(`El número ${elNumero}, es correcto!`);
 
+console.log(`TABLA DE MULTIPLICAR DEL ${elNumero}`)
+
+for(let i = 1; i <= 10; i++){
+
+        console.log(`${i} x ${elNumero} = ${i*elNumero}`);
+
+    }
+
 **********************************************
 */
+
 
 
 /*
@@ -222,25 +232,140 @@ console.log(`El número ${elNumero}, es correcto!`);
 
 EJERCICIO 10:
 
-1. 
+Seudocódigo:
+1. Creamos la variable contador
+2. Creamos la variable estrellas
+3. Creamos un bucle while
+4. Mostramos en consola el resultado de estrellas
+5. Aumentamos el contador en 1
+6. Aumentamos estrellas en *
+
+
+let contador = 0;
+let estrellas = "*";
+
+while(contador <= 7) {
+    console.log(`${estrellas}`);
+    
+    estrellas += "*";
+    
+    contador++;
+    
+}
+
+
 
 **********************************************
 */
-
 
 /*
 **********************************************
 
 EJERCICIO 11:
 
-1. 
+let names = ["Mauricio", "Laia", "Bruna", "Grace", "Alejandro"];
+
+for(let name of names){
+    console.log(`Conozco a alguien llamado ${name}`);
+    name++;
+}
+
 
 **********************************************
 */
 
-let names = [0, 1, 2, 3, 4, 5];
 
-for (let name of names){
-    name++;
-    console.log(name);
+/*
+***********************************************
+
+EJERCICIO 12:
+
+let myList = [1, 9, 3, 8, 5, 7];
+
+for(let list of myList){
+
+    console.log(list * 2);
+
+    list++
 }
+
+
+***********************************************
+*/
+
+
+/*
+************************************************
+
+EJERCICIO 13:
+Seudocódigo:
+1. Cramos un array con 10 números
+2. Creamos un for of
+3. Creamos por dentro un if para validar si es negativo o positivo.
+4. Imprimimos el resultado
+
+
+let myNumbers = [19, -04, 14, 15, -8, 4, 3, 43, 79, 0];
+
+console.log(`Los números seleccionados son: ${myNumbers}:`)
+
+for(let number of myNumbers){
+    if(number < 0){
+        console.log(`El número ${number}, es negativo`)
+    } else{
+        console.log(`El número ${number}, es positivo`);
+
+    }
+}
+
+
+************************************************
+*/
+
+
+/*
+***********************************************
+EJERCICIO 14:
+1. Solicitar un número entre 1 y 100
+2. Validar número ingresado
+3. Comprobar si es mayor o menor. o si lo ha adivinado e imprimirlo
+4. Hay solo 6 intentos (bucle)
+
+let userNumber = Number(prompt(`Adivina un número secreto entre 1 y 100.`));
+
+let systemNumber = Math.floor((Math.random() * 100) + 1);
+
+
+let contador = 6;
+
+while(contador >= 1){
+
+    if(systemNumber > userNumber && contador > 1){
+        console.log(`Incorrecto, el número ingresado ${userNumber} es menor`);
+        contador--;
+        console.log(`Te quedan ${contador} intentos`);
+        userNumber = Number(prompt(`Adivina un número secreto entre 1 y 100.`));
+
+    } else if(systemNumber < userNumber && contador > 1){
+        console.log(`Incorrecto, el número ingresado ${userNumber} es mayor`);
+        contador--;
+        console.log(`Te quedan ${contador} intentos`);
+        userNumber = Number(prompt(`Adivina un número secreto entre 1 y 100.`));
+
+    } else if (systemNumber === userNumber){
+        console.log(`Felicitaciones, has adivinado el número secreto!`);
+        break;
+    } else {
+        console.log('Se han acabado tus intentos!!');
+        break;
+    }
+}
+
+console.log(`EL NÚMERO SECRETO ERA: ${systemNumber}`);
+
+
+*/
+
+
+
+

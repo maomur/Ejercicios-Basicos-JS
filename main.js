@@ -258,7 +258,7 @@ while(contador <= 7) {
 */
 //OTRA OPCIÓN:
 
-
+/*
 const numEstrellas = prompt(`Cuántas estrellas quieres imprimier?`);
 
 if(!isNaN(numEstrellas) && numEstrellas){
@@ -267,6 +267,9 @@ if(!isNaN(numEstrellas) && numEstrellas){
         estrellas = estrellas + '*';
     }
 }
+
+
+*/
 
 
 /*

@@ -342,7 +342,7 @@
         <article class="results__exercise" id="res-exercise-12">
             <h2>Ejercicio 12</h2>
             <pre>
-                let myList = [1, 9, 3, 8, 5, 7];
+                // OPCIÓN 1: let myList = [1, 9, 3, 8, 5, 7];
 
                 for(let list of myList){
                 
@@ -350,6 +350,24 @@
                 
                     list++
                 }
+
+                // OPCIÓN 2: let myList = [1, 9, 3, 8, 5, 7];
+
+                let myList = [1, 9, 3, 8, 5, 7];
+                for(let i = 0; i <= mylist.length; i++){
+                    console.log(myList[i] * 2);
+                }
+
+
+                // OPCIÓN 3: let myList = [1, 9, 3, 8, 5, 7];
+
+                let contador = 0;
+
+                while(contador < myList.length){
+                    console.log(myList[contador] * 2);
+                    contador++
+                }
+
             </pre>
         </article>
         <a class="top__button" href="#exercise-12"><p>Subir</p></a>

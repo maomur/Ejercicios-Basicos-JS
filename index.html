@@ -309,6 +309,18 @@
                     contador++;
                 
                 }
+
+                //OTRA OPCIÓN:
+
+                const numEstrellas = prompt(`Cuántas estrellas quieres imprimier?`);
+
+                if(!isNaN(numEstrellas) && numEstrellas){
+                    for(let i = 1; i <= numEstrellas; i++){
+                        console.log(estrellas);
+                        estrellas = estrellas + '*';
+                    }
+                }
+
             </pre>
         </article>
         <a class="top__button" href="#exercise-10"><p>Subir</p></a>

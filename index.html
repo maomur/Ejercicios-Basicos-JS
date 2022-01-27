@@ -376,14 +376,26 @@
         <article class="results__exercise" id="res-exercise-13">
             <h2>Ejercicio 13</h2>
             <pre>
+                let myNumbers = [19, -04, 14, 15, -8, 4, 3, 43, 79, 0];
+
+                console.log(`Los números seleccionados son: ${myNumbers}:`)
+                
+                let positivos = 0;
+                let negativos = 0;
+                let ceros = 0;
+                
                 for(let number of myNumbers){
                     if(number < 0){
-                        console.log(`El número ${number}, es negativo`)
+                        negativos++
+                    } else if (number > 0){
+                        positivos++
                     } else{
-                        console.log(`El número ${number}, es positivo`);
-                
+                        ceros++
                     }
                 }
+                console.log(`Total de números positivos = ${positivos}`);
+                console.log(`Total de números negativos = ${negativos}`);
+                console.log(`Total de números cero = ${ceros}`);
             </pre>
         </article>
         <a class="top__button" href="#exercise-13"><p>Subir</p></a>

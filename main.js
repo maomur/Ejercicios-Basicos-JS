@@ -303,39 +303,43 @@ for(let list of myList){
     list++
 }
 
+let myList = [1, 9, 3, 8, 5, 7];
+for(let i = 0; i <= mylist.length; i++){
+    console.log(myList[i] * 2);
+}
+
+
 
 ***********************************************
 */
 
 
+
+// EJERCICIO 13:
+
 /*
-************************************************
-
-EJERCICIO 13:
-Seudocódigo:
-1. Cramos un array con 10 números
-2. Creamos un for of
-3. Creamos por dentro un if para validar si es negativo o positivo.
-4. Imprimimos el resultado
-
-
 let myNumbers = [19, -04, 14, 15, -8, 4, 3, 43, 79, 0];
 
 console.log(`Los números seleccionados son: ${myNumbers}:`)
 
+let positivos = 0;
+let negativos = 0;
+let ceros = 0;
+
 for(let number of myNumbers){
     if(number < 0){
-        console.log(`El número ${number}, es negativo`)
+        negativos++
+    } else if (number > 0){
+        positivos++
     } else{
-        console.log(`El número ${number}, es positivo`);
-
+        ceros++
     }
 }
+console.log(`Total de números positivos = ${positivos}`);
+console.log(`Total de números negativos = ${negativos}`);
+console.log(`Total de números cero = ${ceros}`);
 
-
-************************************************
 */
-
 
 /*
 ***********************************************
